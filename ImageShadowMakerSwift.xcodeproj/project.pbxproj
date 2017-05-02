@@ -1,0 +1,352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B3224C5B1EB31FA3008CEC2E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3224C5A1EB31FA3008CEC2E /* QuartzCore.framework */; };
+		B3224C5D1EB3248F008CEC2E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3224C5C1EB3248F008CEC2E /* CoreGraphics.framework */; };
+		B39F5D321EB2EE7B006839D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39F5D311EB2EE7B006839D0 /* AppDelegate.swift */; };
+		B39F5D341EB2EE7B006839D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39F5D331EB2EE7B006839D0 /* ViewController.swift */; };
+		B39F5D371EB2EE7B006839D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B39F5D351EB2EE7B006839D0 /* Main.storyboard */; };
+		B39F5D391EB2EE7B006839D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B39F5D381EB2EE7B006839D0 /* Assets.xcassets */; };
+		B39F5D3C1EB2EE7B006839D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B39F5D3A1EB2EE7B006839D0 /* LaunchScreen.storyboard */; };
+		B39F5D451EB2F1D7006839D0 /* ImageShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39F5D441EB2F1D7006839D0 /* ImageShadowView.swift */; };
+		B3D94AC81EB837DD00EBD3FF /* UIImage+MainColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D94AC71EB837DD00EBD3FF /* UIImage+MainColor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B3224C5A1EB31FA3008CEC2E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B3224C5C1EB3248F008CEC2E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B39F5D2E1EB2EE7B006839D0 /* ImageShadowMakerSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageShadowMakerSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B39F5D311EB2EE7B006839D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B39F5D331EB2EE7B006839D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B39F5D361EB2EE7B006839D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B39F5D381EB2EE7B006839D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B39F5D3B1EB2EE7B006839D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B39F5D3D1EB2EE7B006839D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B39F5D441EB2F1D7006839D0 /* ImageShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageShadowView.swift; sourceTree = "<group>"; };
+		B3D94AC51EB837DD00EBD3FF /* ImageShadowMakerSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImageShadowMakerSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		B3D94AC61EB837DD00EBD3FF /* UIImage+MainColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MainColor.h"; sourceTree = "<group>"; };
+		B3D94AC71EB837DD00EBD3FF /* UIImage+MainColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MainColor.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B39F5D2B1EB2EE7B006839D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3224C5D1EB3248F008CEC2E /* CoreGraphics.framework in Frameworks */,
+				B3224C5B1EB31FA3008CEC2E /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B3224C591EB31FA3008CEC2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3224C5C1EB3248F008CEC2E /* CoreGraphics.framework */,
+				B3224C5A1EB31FA3008CEC2E /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B39F5D251EB2EE7B006839D0 = {
+			isa = PBXGroup;
+			children = (
+				B39F5D301EB2EE7B006839D0 /* ImageShadowMakerSwift */,
+				B39F5D2F1EB2EE7B006839D0 /* Products */,
+				B3224C591EB31FA3008CEC2E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B39F5D2F1EB2EE7B006839D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B39F5D2E1EB2EE7B006839D0 /* ImageShadowMakerSwift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B39F5D301EB2EE7B006839D0 /* ImageShadowMakerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				B39F5D431EB2EF53006839D0 /* ImageShadow */,
+				B39F5D311EB2EE7B006839D0 /* AppDelegate.swift */,
+				B39F5D331EB2EE7B006839D0 /* ViewController.swift */,
+				B39F5D351EB2EE7B006839D0 /* Main.storyboard */,
+				B39F5D381EB2EE7B006839D0 /* Assets.xcassets */,
+				B39F5D3A1EB2EE7B006839D0 /* LaunchScreen.storyboard */,
+				B39F5D3D1EB2EE7B006839D0 /* Info.plist */,
+			);
+			path = ImageShadowMakerSwift;
+			sourceTree = "<group>";
+		};
+		B39F5D431EB2EF53006839D0 /* ImageShadow */ = {
+			isa = PBXGroup;
+			children = (
+				B39F5D441EB2F1D7006839D0 /* ImageShadowView.swift */,
+				B3D94AC61EB837DD00EBD3FF /* UIImage+MainColor.h */,
+				B3D94AC71EB837DD00EBD3FF /* UIImage+MainColor.m */,
+				B3D94AC51EB837DD00EBD3FF /* ImageShadowMakerSwift-Bridging-Header.h */,
+			);
+			path = ImageShadow;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B39F5D2D1EB2EE7B006839D0 /* ImageShadowMakerSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B39F5D401EB2EE7B006839D0 /* Build configuration list for PBXNativeTarget "ImageShadowMakerSwift" */;
+			buildPhases = (
+				B39F5D2A1EB2EE7B006839D0 /* Sources */,
+				B39F5D2B1EB2EE7B006839D0 /* Frameworks */,
+				B39F5D2C1EB2EE7B006839D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageShadowMakerSwift;
+			productName = ImageShadowMakerSwift;
+			productReference = B39F5D2E1EB2EE7B006839D0 /* ImageShadowMakerSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B39F5D261EB2EE7B006839D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = GofeyLee;
+				TargetAttributes = {
+					B39F5D2D1EB2EE7B006839D0 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = T7U5EL3U9U;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B39F5D291EB2EE7B006839D0 /* Build configuration list for PBXProject "ImageShadowMakerSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B39F5D251EB2EE7B006839D0;
+			productRefGroup = B39F5D2F1EB2EE7B006839D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B39F5D2D1EB2EE7B006839D0 /* ImageShadowMakerSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B39F5D2C1EB2EE7B006839D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B39F5D3C1EB2EE7B006839D0 /* LaunchScreen.storyboard in Resources */,
+				B39F5D391EB2EE7B006839D0 /* Assets.xcassets in Resources */,
+				B39F5D371EB2EE7B006839D0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B39F5D2A1EB2EE7B006839D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B39F5D341EB2EE7B006839D0 /* ViewController.swift in Sources */,
+				B39F5D451EB2F1D7006839D0 /* ImageShadowView.swift in Sources */,
+				B3D94AC81EB837DD00EBD3FF /* UIImage+MainColor.m in Sources */,
+				B39F5D321EB2EE7B006839D0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B39F5D351EB2EE7B006839D0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B39F5D361EB2EE7B006839D0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B39F5D3A1EB2EE7B006839D0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B39F5D3B1EB2EE7B006839D0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B39F5D3E1EB2EE7B006839D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B39F5D3F1EB2EE7B006839D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B39F5D411EB2EE7B006839D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = T7U5EL3U9U;
+				INFOPLIST_FILE = ImageShadowMakerSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GofeyLee.ImageShadowMakerSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ImageShadowMakerSwift/ImageShadow/ImageShadowMakerSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B39F5D421EB2EE7B006839D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = T7U5EL3U9U;
+				INFOPLIST_FILE = ImageShadowMakerSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GofeyLee.ImageShadowMakerSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ImageShadowMakerSwift/ImageShadow/ImageShadowMakerSwift-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B39F5D291EB2EE7B006839D0 /* Build configuration list for PBXProject "ImageShadowMakerSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B39F5D3E1EB2EE7B006839D0 /* Debug */,
+				B39F5D3F1EB2EE7B006839D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B39F5D401EB2EE7B006839D0 /* Build configuration list for PBXNativeTarget "ImageShadowMakerSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B39F5D411EB2EE7B006839D0 /* Debug */,
+				B39F5D421EB2EE7B006839D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B39F5D261EB2EE7B006839D0 /* Project object */;
+}
