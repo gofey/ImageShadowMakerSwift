@@ -15,7 +15,6 @@
 		B39F5D391EB2EE7B006839D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B39F5D381EB2EE7B006839D0 /* Assets.xcassets */; };
 		B39F5D3C1EB2EE7B006839D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B39F5D3A1EB2EE7B006839D0 /* LaunchScreen.storyboard */; };
 		B39F5D451EB2F1D7006839D0 /* ImageShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39F5D441EB2F1D7006839D0 /* ImageShadowView.swift */; };
-		B3D94AC81EB837DD00EBD3FF /* UIImage+MainColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D94AC71EB837DD00EBD3FF /* UIImage+MainColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +28,6 @@
 		B39F5D3B1EB2EE7B006839D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B39F5D3D1EB2EE7B006839D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B39F5D441EB2F1D7006839D0 /* ImageShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageShadowView.swift; sourceTree = "<group>"; };
-		B3D94AC51EB837DD00EBD3FF /* ImageShadowMakerSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImageShadowMakerSwift-Bridging-Header.h"; sourceTree = "<group>"; };
-		B3D94AC61EB837DD00EBD3FF /* UIImage+MainColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MainColor.h"; sourceTree = "<group>"; };
-		B3D94AC71EB837DD00EBD3FF /* UIImage+MainColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MainColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,9 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				B39F5D441EB2F1D7006839D0 /* ImageShadowView.swift */,
-				B3D94AC61EB837DD00EBD3FF /* UIImage+MainColor.h */,
-				B3D94AC71EB837DD00EBD3FF /* UIImage+MainColor.m */,
-				B3D94AC51EB837DD00EBD3FF /* ImageShadowMakerSwift-Bridging-Header.h */,
 			);
 			path = ImageShadow;
 			sourceTree = "<group>";
@@ -174,7 +167,6 @@
 			files = (
 				B39F5D341EB2EE7B006839D0 /* ViewController.swift in Sources */,
 				B39F5D451EB2F1D7006839D0 /* ImageShadowView.swift in Sources */,
-				B3D94AC81EB837DD00EBD3FF /* UIImage+MainColor.m in Sources */,
 				B39F5D321EB2EE7B006839D0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,7 +296,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GofeyLee.ImageShadowMakerSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "ImageShadowMakerSwift/ImageShadow/ImageShadowMakerSwift-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -320,7 +312,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GofeyLee.ImageShadowMakerSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "ImageShadowMakerSwift/ImageShadow/ImageShadowMakerSwift-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

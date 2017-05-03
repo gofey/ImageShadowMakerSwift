@@ -10,11 +10,16 @@ import UIKit
 
 class ImageShadowView: UIView {
 
+    //MARK: - 重写set方法
     public var image:UIImage? {
         didSet{
-            
-            self.imgView?.image = image
-            
+            self.imgView?.image = self.image
+            DispatchQueue.global().async {
+                let color = self.image?.mostColor
+                DispatchQueue.main.async {
+                    self.layer.shadowColor = color?.cgColor
+                }
+            }
         }
     }
     
@@ -24,10 +29,18 @@ class ImageShadowView: UIView {
         }
     }
     
+    public var shadowOpacity:Float? {
+        didSet{
+            self.layer.shadowOpacity = shadowOpacity!
+        }
+    }
+    
     public var cornerRadius:CGFloat? {
         didSet{
             self.imgView?.clipsToBounds = true
             self.imgView?.layer.cornerRadius = cornerRadius!
+            let path = UIBezierPath.init(roundedRect: self.layer.bounds, cornerRadius: cornerRadius!)
+            self.layer.shadowPath = path.cgPath
         }
     }
     
@@ -51,13 +64,20 @@ class ImageShadowView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        imgView = UIImageView(frame: CGRect.init(x: 0, y: 0, width: frame.width, height: frame.height))
+        imgView = UIImageView(frame: CGRect.init(x: 0.5, y: 0.5, width: frame.width - 1, height: frame.height - 1))
         self.addSubview(imgView!)
         imgView?.isUserInteractionEnabled = true
+        self.shadow()
     }
     
+    //MARK: - 初始化阴影方法
     private func shadow() {
-        
+        self.layer.shadowOpacity = 1
+        let path = UIBezierPath.init(rect: self.layer.bounds)
+        self.layer.shadowPath = path.cgPath
+        self.layer.shadowColor = self.image?.mostColor.cgColor
+        self.layer.shadowOffset = CGSize.init(width: 0, height: 5)
+        self.layer.shadowRadius = 8
     }
     
     
@@ -78,11 +98,11 @@ class ImageShadowView: UIView {
 }
 
 //MARK: - UIImage  extension
-extension UIImage {
+private extension UIImage {
+    
     var mostColor:UIColor {
         // 获取图片信息
         
-//        let imgCGImage = self.cgImage
         let imgWidth:Int = Int(self.size.width) / 2
         let imgHeight:Int = Int(self.size.height) / 2
         
@@ -117,7 +137,7 @@ extension UIImage {
         let cls = NSCountedSet.init(capacity: imgWidth * imgHeight)
         for x in 0..<imgWidth {
             for y in 0..<imgHeight {
-                let offSet = (y * imgWidth + x) * 4
+                let offSet = x * y * 4
                 let r = (data + offSet    ).pointee
                 let g = (data + offSet + 1).pointee
                 let b = (data + offSet + 2).pointee

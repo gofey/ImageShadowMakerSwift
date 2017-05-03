@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         imgView.image = #imageLiteral(resourceName: "image0")
         let tap = UITapGestureRecognizer.init(target: self, action: #selector(changeImg))
         imgView.addGestureRecognizer(tap)
-        
+        imgView.cornerRadius = 50
         
     }
     
@@ -32,13 +32,6 @@ class ViewController: UIViewController {
             imgIndex = 0
         }
         imgView.image = UIImage.init(imageLiteralResourceName: "image\(imgIndex)")
-        DispatchQueue.global().async {
-            let color = self.imgView.image?.mainColor()
-            DispatchQueue.main.async {
-                self.view.backgroundColor = color
-            }
-
-        }
         
     }
     
